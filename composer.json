@@ -29,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Duyler\\Package\\Tests\\": "tests/"
+            "Duyler\\Package\\Test\\": ["tests/"]
         }
     },
     "config": {
