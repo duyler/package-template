@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: duyler/php-zts:8.4
+      image: duyler/php-zts:8.5
       options: --user root
 
     strategy:
