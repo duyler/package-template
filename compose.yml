@@ -1,0 +1,11 @@
+services:
+  php:
+    image: duyler/php-zts:8.5
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      XDEBUG_MODE: coverage
+      XDEBUG_CONFIG: |
+        mode=coverage
+    init: true
