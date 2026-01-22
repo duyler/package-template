@@ -1,8 +1,8 @@
 {
-    "name": "duyler/package",
-    "description": "Powerful PHP package",
+    "name": "duyler/package-template",
+    "description": "Powerful PHP package-template",
     "keywords": [
-        "package"
+        "package-template"
     ],
     "type": "library",
     "license": "MIT",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Duyler\\Package\\": "src/"
+            "Duyler\\PackageTemplate\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Duyler\\Package\\Test\\": ["tests/"]
+            "Duyler\\PackageTemplate\\Test\\": ["tests/"]
         }
     },
     "config": {

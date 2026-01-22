@@ -2,14 +2,6 @@
 
 Thank you for your interest in contributing! This document provides guidelines for contributing to the project.
 
-## Development Setup
-
-```bash
-git clone https://github.com/duyler/package.git
-cd collections
-composer install
-```
-
 ## Running Tests
 
 ```bash
@@ -28,9 +20,6 @@ make coverage
 This project follows PER-CS coding standard.
 
 ```bash
-# Check code style
-make cs-check
-
 # Fix code style automatically
 make cs-fix
 ```
