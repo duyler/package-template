@@ -44,6 +44,9 @@ init:
 	@sed -i.bak 's/package-template/$(NAME)/g' README.md && rm README.md.bak
 	@sed -i.bak 's/PackageTemplate/$(PASCAL_NAME)/g' README.md && rm README.md.bak
 
+	@sed -i.bak 's/package-template/$(NAME)/g' sonar-project.properties && rm sonar-project.properties.bak
+	@sed -i.bak 's/PackageTemplate/$(PASCAL_NAME)/g' sonar-project.properties && rm sonar-project.properties.bak
+
 	@echo "Package name (kebab-case): $(NAME)"
 	@echo "Namespace (PascalCase):  $(PASCAL_NAME)"
 
