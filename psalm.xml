@@ -16,6 +16,5 @@
     </projectFiles>
     <issueHandlers>
         <ClassMustBeFinal errorLevel="suppress" />
-        <MixedAssignment errorLevel="suppress" />
     </issueHandlers>
 </psalm>

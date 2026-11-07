@@ -2,6 +2,10 @@
 tests:
 	docker-compose run --rm php vendor/bin/phpunit
 
+.PHONY: infection
+infection:
+	docker-compose run --rm php vendor/bin/infection
+
 .PHONY: psalm
 psalm:
 	docker-compose run --rm php vendor/bin/psalm
@@ -20,7 +24,7 @@ shell:
 
 .PHONY: coverage
 coverage:
-	vendor/bin/phpunit --coverage-html=coverage --coverage-text
+	docker-compose run --rm php vendor/bin/phpunit --coverage-html=coverage --coverage-text
 
 .PHONY: update
 update:
